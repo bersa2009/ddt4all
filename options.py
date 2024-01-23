@@ -99,7 +99,7 @@ def get_translator_lang():
         loc_lang = lang
     except:
         try:
-            lang, enc = locale.getlocale()
+            lang, enc = locale.getdefaultlocale()
             loc_lang = lang
         except:
             pass
